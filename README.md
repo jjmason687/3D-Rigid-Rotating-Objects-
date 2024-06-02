@@ -10,6 +10,8 @@ The dependencies for this repository are given in the ```environment.yaml``` fil
 - [BlenderPy](https://pypi.org/project/bpy/) (bpy => 4.0.0)
 - [Numpy](https://numpy.org/install/) (numpy => 1.24.3)
 
+Our implementation uses [Blender]() (Blender 4.1.1) to render our images. BlenderPy seems to require a graphical backend to run. Pre-generated datasets of 32-by-32 pixels can be found at this [link](https://www.dropbox.com/scl/fo/8m2vs7vuskyge0ivabauf/ANsTmZZtmV57Qm6p1GKKyrI?rlkey=33tjibx07270t2my3iozll0jq&st=15rvlnbz&dl=0).
+
 ## Example Usage 
 An example call is give in the bash file ```run/run.sh```:
 ```
