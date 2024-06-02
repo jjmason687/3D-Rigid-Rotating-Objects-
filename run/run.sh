@@ -1,4 +1,4 @@
-python3 run_data_gen.py --dataset_name='example'\
+python3 run/run_data_gen.py --dataset_name='example_name'\
                         --experiment_type='ucube'\
                         --save_dir='example_dir'\
                         --model_dir='BlenderModel/'\

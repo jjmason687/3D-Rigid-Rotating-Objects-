@@ -1,8 +1,7 @@
 # Image Datasets for 3D Rigid Body Dynamics on **SO(**3**)**
 Repository for implmentation of code used for data generation in ["Learning to Predict 3D Rotational Dynamics from Images of a Rigid Body with Unknown Mass Distribution"](https://www.mdpi.com/2226-4310/10/11/921). 
 
-In many real-world settings, image observations of freely rotating 3D rigid bodies may be available when low-dimensional measurements are not. However, the high-dimensionality of image data precludes the use of classical estimation techniques to learn the dynamics. The usefulness of standard deep learning methods is also limited, because an image of a rigid body reveals nothing about the distribution of mass inside the body, which, together with initial angular velocity, is what
-determines how the body will rotate. We present a physics-based neural network model to estimate and predict 3D rotational dynamics from image sequences. We achieve this using a multi-stage prediction pipeline that maps individual images to a latent representation homeomorphic to SO(3), computes angular velocities from latent pairs, and predicts future latent states using the Hamiltonian equations of motion. **In order to demonstrate the efficacy of our approach, we've created a framework to generate datasets of sequences of synthetic images of rotating objects, including cubes, prisms and satellites, with unknown uniform and non-uniform mass distributions. This repository provides a way to modularly generate different datasets of 3D objects rotating and moving accoding to 3D rigid body dynamics.**
+ **In order to demonstrate the efficacy of our approach, we've created a framework to generate datasets of sequences of synthetic images of rotating objects, including cubes, prisms and satellites, with unknown uniform and non-uniform mass distributions. This repository provides a way to modularly generate different datasets of 3D objects rotating and moving accoding to 3D rigid body dynamics.**
 
 ## Dependencies
 The dependencies for this repository are given in the '''environment.yaml''' file. Some primary dependencies include:\
@@ -12,3 +11,20 @@ The dependencies for this repository are given in the '''environment.yaml''' fil
 - [Numpy](https://numpy.org/install/) (numpy => 1.24.3)
 
 ## Example Usage 
+
+'''
+python3 run/run_data_gen.py --dataset_name='example_name'\
+                        --experiment_type='ucube'\
+                        --save_dir='example_dir'\
+                        --model_dir='BlenderModel/'\
+                        --n_samples=2\
+                        --radius=50.\
+                        --traj_len=100\
+                        --dt=0.001\
+                        --moi_diag_gt 0.602 0.602 0.602\
+                        --moi_off_diag_gt 0. 0. 0.\
+                        --img_size=64\
+                        --img_ratio=1\
+                        --img_quality=90\
+                        --seed=0\
+'''
