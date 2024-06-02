@@ -11,7 +11,7 @@ The dependencies for this repository are given in the ```environment.yaml``` fil
 - [Numpy](https://numpy.org/install/) (numpy => 1.24.3)
 
 ## Example Usage 
-An example call is give in the bash file ```run/run.sh```, shown here:
+An example call is give in the bash file ```run/run.sh```:
 ```
 python3 run/run_data_gen.py --dataset_name='example_name'\
                         --experiment_type='ucube'\
