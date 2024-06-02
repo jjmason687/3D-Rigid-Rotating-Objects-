@@ -1,0 +1,14 @@
+python3 run_data_gen.py --dataset_name='example'\
+                        --experiment_type='ucube'\
+                        --save_dir='example_dir'\
+                        --model_dir='BlenderModel/'\
+                        --n_samples=2\
+                        --radius=50.\
+                        --traj_len=100\
+                        --dt=0.001\
+                        --moi_diag_gt 0.602 0.602 0.602\
+                        --moi_off_diag_gt 0. 0. 0.\
+                        --img_size=64\
+                        --img_ratio=1\
+                        --img_quality=90\
+                        --seed=0\  
