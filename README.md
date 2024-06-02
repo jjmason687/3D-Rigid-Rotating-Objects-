@@ -4,15 +4,15 @@ Repository for implmentation of code used for data generation in ["Learning to P
  **In order to demonstrate the efficacy of our approach, we've created a framework to generate datasets of sequences of synthetic images of rotating objects, including cubes, prisms and satellites, with unknown uniform and non-uniform mass distributions. This repository provides a way to modularly generate different datasets of 3D objects rotating and moving accoding to 3D rigid body dynamics.**
 
 ## Dependencies
-The dependencies for this repository are given in the '''environment.yaml''' file. Some primary dependencies include:\
+The dependencies for this repository are given in the ```environment.yaml``` file. Some primary dependencies include:\
 
 - [Pytorch](https://pytorch.org/) (torch => 2.0.1)
 - [BlenderPy](https://pypi.org/project/bpy/) (bpy => 4.0.0)
 - [Numpy](https://numpy.org/install/) (numpy => 1.24.3)
 
 ## Example Usage 
-
-'''
+An example call is give in the bash file ```run/run.sh```, shown here:
+```
 python3 run/run_data_gen.py --dataset_name='example_name'\
                         --experiment_type='ucube'\
                         --save_dir='example_dir'\
@@ -27,4 +27,4 @@ python3 run/run_data_gen.py --dataset_name='example_name'\
                         --img_ratio=1\
                         --img_quality=90\
                         --seed=0\
-'''
+```
