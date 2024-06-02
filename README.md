@@ -1,7 +1,7 @@
 # Image Datasets for 3D Rigid Body Dynamics on **SO(**3**)**
 Repository for implmentation of code used for data generation in ["Learning to Predict 3D Rotational Dynamics from Images of a Rigid Body with Unknown Mass Distribution"](https://www.mdpi.com/2226-4310/10/11/921). 
 
- **In order to demonstrate the efficacy of our approach, we've created a framework to generate datasets of sequences of synthetic images of rotating objects, including cubes, prisms and satellites, with unknown uniform and non-uniform mass distributions. This repository provides a way to modularly generate different datasets of 3D objects rotating and moving accoding to 3D rigid body dynamics.**
+ In order to demonstrate the efficacy of our approach, we've created a framework to generate datasets of sequences of synthetic images of rotating objects, including cubes, prisms and satellites, with unknown uniform and non-uniform mass distributions. This repository provides a way to modularly generate different datasets of 3D objects rotating and moving accoding to 3D rigid body dynamics.
 
 ## Dependencies
 The dependencies for this repository are given in the ```environment.yaml``` file. Some primary dependencies include:\
